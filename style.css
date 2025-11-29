@@ -1,498 +1,635 @@
-.macbook-pro {
-  background-color: #ffffff;
-  overflow: hidden;
-  width: 100%;
-  min-width: 1512px;
-  min-height: 4629px;
-  display: flex;
-  flex-direction: column;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard', 'sans-serif';
 }
 
-.macbook-pro .frame {
-  width: 1512px;
-  height: 982px;
-  position: relative;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+a, a:link, a:visited{
+  color: inherit;
+  text-decoration: none;
 }
 
-.macbook-pro .header-outline {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 0px 216px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #ffffff80;
+li{
+  list-style: none;
 }
 
-.macbook-pro .header {
-  display: flex;
+button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+body {
+  font-size: 16px;
+  color: #111;
+}
+
+
+/* 공통 --------------------- */
+
+.container{
   width: 1080px;
-  align-items: center;
+  margin: 0 auto;
+}
+
+section{
+  font-family: 'Pretendard', 'sans-serif';
+  padding: 3.75rem 0  3.75rem 0;
+}
+
+section:nth-child(2n){
+  background-color: #f8f8f8;
+}
+
+section .title h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 3.75rem 0;
+}
+
+/* header ---------------------- */
+
+header{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background-color: rgba(255,255,255,.7);
+  width: 100%;
+}
+
+header .container{
+  display: flex;
   justify-content: space-between;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: transparent;
-}
-
-.macbook-pro .header-left {
-  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 11px 0px;
-  position: relative;
-  flex: 0 0 auto;
 }
 
-.macbook-pro .text-wrapper {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: "Pretendard-Regular", Helvetica;
+header h1{
+  font-size: 1rem;
   font-weight: 400;
-  color: #333333;
-  font-size: 16px;
-  letter-spacing: -0.16px;
-  line-height: 25.6px;
-  white-space: nowrap;
+  line-height: 160%;
+  letter-spacing: -1%;
+  color: #333;
+  padding: 11px 0;
 }
 
-.macbook-pro .header-right {
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-end;
+header nav ul{
+  display: flex;
   gap: 16px;
-  position: relative;
-  flex: 0 0 auto;
 }
 
-.macbook-pro .div-wrapper {
-  display: inline-flex;
-  align-items: center;
+header nav ul li button{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -1%;
+  color: #767676;
+  padding: 11px 0;
+}
+
+.menu-btn{
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+/* main ------------------------- */
+
+main{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/frame-1.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
   justify-content: center;
-  gap: 10px;
-  padding: 11px 0px;
-  position: relative;
-  flex: 0 0 auto;
+  align-items: center
 }
 
-.macbook-pro .div {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: "Pretendard-Regular", Helvetica;
-  font-weight: 400;
-  color: #737373;
-  font-size: 16px;
-  letter-spacing: -0.16px;
-  line-height: 25.6px;
-  white-space: nowrap;
-}
-
-.macbook-pro .group {
+main::before{
+  content: "";
   position: absolute;
-  top: calc(50.00% - 162px);
-  left: 216px;
-  width: 933px;
-  height: 324px;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(255,255,255,.7);
 }
 
-.macbook-pro .frame-2 {
+main .container {
+  position: relative;
+  z-index: 1;
+}
+
+main .pc{
   display: flex;
   flex-direction: column;
-  width: 561px;
-  align-items: flex-start;
-  gap: 8px;
-  position: absolute;
-  top: calc(50.00% - 162px);
-  left: 0;
+  justify-content: center;
+  gap: 3.75rem;
 }
 
-.macbook-pro .text-wrapper-2 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1.00px;
-  font-family: "Pretendard-Bold", Helvetica;
+main h1{
+  font-size: 5rem;
   font-weight: 700;
-  color: #333333;
-  font-size: 80px;
-  letter-spacing: -0.80px;
-  line-height: 96.0px;
+  line-height: 120%;
+  letter-spacing: -1%;
+  color: #333;
 }
 
-.macbook-pro .text-wrapper-3 {
-  position: relative;
-  align-self: stretch;
-  font-family: "Pretendard-Bold", Helvetica;
-  font-weight: 700;
-  color: #333333;
-  font-size: 80px;
-  letter-spacing: -0.80px;
-  line-height: 96.0px;
-}
-
-.macbook-pro .UI-UX-GDGOC-TUK {
-  position: absolute;
-  top: 260px;
-  left: 0;
-  font-family: "Pretendard-Regular", Helvetica;
+main p{
+  font-size: 1.25rem;
   font-weight: 400;
-  color: #333333;
-  font-size: 20px;
-  letter-spacing: -0.20px;
-  line-height: 32.0px;
+  line-height: 160%;
+  letter-spacing: -1%;
+  color: #767676;
 }
 
-.macbook-pro .frame-3 {
-  width: 1512px;
-  height: 1210px;
-  position: relative;
+main .mobile{
+  display: none;
 }
 
-.macbook-pro .text-wrapper-4 {
-  position: absolute;
-  top: 60px;
-  left: calc(50.00% - 540px);
-  font-family: "Pretendard-Bold", Helvetica;
-  font-weight: 700;
-  color: #333333;
-  font-size: 40px;
-  letter-spacing: -0.40px;
-  line-height: 48.0px;
-  white-space: nowrap;
+/* section about me-------------- */
+
+.about .about-self{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
 }
 
-.macbook-pro .frame-4 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: absolute;
-  top: 168px;
-  left: 677px;
-}
-
-.macbook-pro .text-wrapper-5 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1.00px;
-  font-family: "Pretendard-Bold", Helvetica;
-  font-weight: 700;
-  color: #333333;
-  font-size: 20px;
-  letter-spacing: -0.20px;
-  line-height: 32.0px;
-}
-
-.macbook-pro .p {
-  position: relative;
-  align-self: stretch;
-  font-family: "Pretendard-Regular", Helvetica;
-  font-weight: 400;
-  color: #333333;
-  font-size: 20px;
-  letter-spacing: -0.20px;
-  line-height: 32.0px;
-}
-
-.macbook-pro .group-2 {
-  position: absolute;
-  top: 712px;
-  left: 308px;
-  width: 261px;
-  height: 129px;
+.about .about-self .right{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: start;
+  gap: 0.5rem;
 }
 
-.macbook-pro .text-wrapper-6 {
-  width: 255px;
-  height: 45px;
-  font-family: "Pretendard-Bold", Helvetica;
+.about .right h2{
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #333333;
-  font-size: 28px;
-  letter-spacing: -0.28px;
-  line-height: 44.8px;
-  white-space: nowrap;
+  letter-spacing: -1%;
+  line-height: 160%;
+  color: #333;
 }
 
-.macbook-pro .text-wrapper-7 {
-  width: 94px;
-  height: 32px;
-  font-family: "Pretendard-Regular", Helvetica;
-  font-weight: 400;
-  color: #333333;
-  font-size: 20px;
-  letter-spacing: -0.20px;
-  line-height: 32.0px;
-  white-space: nowrap;
-}
-
-.macbook-pro .group-3 {
-  position: absolute;
-  top: 861px;
-  left: 308px;
-  width: 164px;
-  height: 129px;
+.about .right .right-content{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2rem;
 }
 
-.macbook-pro .text-wrapper-8 {
-  width: 158px;
-  height: 45px;
-  font-family: "Pretendard-Bold", Helvetica;
-  font-weight: 700;
-  color: #333333;
-  font-size: 28px;
-  letter-spacing: -0.28px;
-  line-height: 44.8px;
-  white-space: nowrap;
-}
-
-.macbook-pro .image {
-  position: absolute;
-  top: calc(50.00% - 437px);
-  left: 308px;
-  width: 346px;
-  height: 387px;
-  aspect-ratio: 0.89;
-}
-
-.macbook-pro .text-wrapper-9 {
-  position: absolute;
-  top: 600px;
-  left: 676px;
-  font-family: "Pretendard-Regular", Helvetica;
+.about .right .right-content p{
+  font-size: 1.25rem;
   font-weight: 400;
-  color: #007aff;
-  font-size: 20px;
-  letter-spacing: -0.20px;
-  line-height: 32.0px;
-  white-space: nowrap;
+  color: #767676;
+  line-height: 160%;
+  letter-spacing: -1%;
 }
 
-.macbook-pro .img {
-  position: absolute;
-  top: 1050px;
-  left: 308px;
-  width: 693px;
-  height: 100px;
+.about .right button{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #007AFF;
+  line-height: 160%;
+  letter-spacing: -1%;
+  margin-top: 2rem;
 }
 
-.macbook-pro .div-2 {
-  margin-left: 2px;
-  width: 1512px;
-  height: 1455px;
-  position: relative;
-  background-color: #f4f4f4;
-}
-
-.macbook-pro .text-wrapper-10 {
-  position: absolute;
-  top: 60px;
-  left: calc(50.00% - 80px);
-  font-family: "Pretendard-Bold", Helvetica;
-  font-weight: 700;
-  color: #333333;
-  font-size: 40px;
-  letter-spacing: -0.40px;
-  line-height: 48.0px;
-  white-space: nowrap;
-}
-
-.macbook-pro .group-4 {
-  position: absolute;
-  top: 577px;
-  left: 214px;
-  width: 528px;
-  height: 349px;
+.about .personal-history{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
-.macbook-pro .rectangle-wrapper {
-  width: 528px;
+.about .PH{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about .PH h2{
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -1%;
+  line-height: 160%;
+  color: #333;
+}
+
+.about .PH p{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #767676;
+  line-height: 160%;
+  letter-spacing: -1%;
+}
+
+.about .img img{
+  margin-top: 3.75rem;
+}
+
+.about .mobile{
+  display: none;
+}
+
+/* portfolio------------------------ */
+
+.portfolio .title{
+  text-align: center;
+}
+
+.portfolio .title .more{
+  display: none;
+}
+
+.portfolio .m-portfolio-scroll{
+  display: none;    
+}
+
+.portfolio .portfolio-list{
+  display: flex;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+  gap: 5rem 1.5rem;
+}
+
+.portfolio .portfolio-list .portfolio-inner{
+  width: 48.888%;
+}
+
+.portfolio .portfolio-list .portfolio-inner img{
+  width: 100%;
   height: 258px;
-  display: flex;
-}
-
-.macbook-pro .rectangle {
-  margin-top: -1px;
-  width: 530px;
-  height: 260px;
-  margin-left: -1px;
   object-fit: cover;
+  border: 1px solid rgba(115,115,115,0.3);
+  border-radius: 15px;
 }
 
-.macbook-pro .frame-5 {
+.portfolio .portfolio-list .portfolio-inner strong{
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1%;
+  color: #333;
+  margin-top: 1.25rem;
+}
+
+.portfolio .portfolio-list .portfolio-inner p{
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -1%;
+  color: #767676;
+}
+
+/* contact --- ---- ----- */
+
+.contact{
+  padding: 0;
+}
+
+.contact .content{
   display: flex;
-  width: 216px;
-  height: 71px;
-  position: relative;
+  justify-self: center;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
+  gap: 1.25rem;
+  width: 100%;
+  height: 100vh;
 }
 
-.macbook-pro .text-wrapper-11 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1.00px;
-  font-family: "Pretendard-SemiBold", Helvetica;
+.contact strong{
+  font-size: 1.875rem;
   font-weight: 600;
-  color: #333333;
-  font-size: 30px;
-  letter-spacing: -0.30px;
-  line-height: 36.0px;
+  line-height: 120%;
+  letter-spacing: -1%;
+  color: #333;
 }
 
-.macbook-pro .text-wrapper-12 {
-  position: relative;
-  align-self: stretch;
-  font-family: "Pretendard-Regular", Helvetica;
-  font-weight: 400;
-  color: #737373;
-  font-size: 22px;
-  letter-spacing: -0.22px;
-  line-height: 35.2px;
-}
-
-.macbook-pro .group-5 {
-  position: absolute;
-  top: 168px;
-  left: 214px;
-  width: 528px;
-  height: 349px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.macbook-pro .group-wrapper {
-  position: absolute;
-  width: 528px;
-  height: 349px;
-  top: 986px;
-  left: 214px;
-  display: flex;
-}
-
-.macbook-pro .group-6 {
-  width: 528px;
-  height: 349px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.macbook-pro .group-7 {
-  position: absolute;
-  top: 986px;
-  left: 766px;
-  width: 528px;
-  height: 349px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.macbook-pro .group-8 {
-  position: absolute;
-  top: 577px;
-  left: 766px;
-  width: 528px;
-  height: 349px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.macbook-pro .group-9 {
-  position: absolute;
-  top: 168px;
-  left: 766px;
-  width: 528px;
-  height: 349px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.macbook-pro .frame-6 {
-  width: 1512px;
-  height: 982px;
-  display: flex;
-  background-color: #ffffff;
-}
-
-.macbook-pro .group-10 {
-  margin-top: 353px;
-  width: 1054px;
-  height: 276px;
-  margin-left: 216px;
-  display: flex;
-  flex-direction: column;
-}
-
-.macbook-pro .text-wrapper-13 {
-  margin-left: 2px;
-  width: 376px;
-  height: 36px;
-  font-family: "Pretendard-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #333333;
-  font-size: 30px;
-  letter-spacing: -0.30px;
-  line-height: 36.0px;
-  white-space: nowrap;
-}
-
-.macbook-pro .text-wrapper-14 {
-  margin-left: 2px;
-  width: 1044px;
-  height: 96px;
-  margin-top: 30px;
-  font-family: "Pretendard-Bold", Helvetica;
+.contact h1{
+  font-size: 5rem;
   font-weight: 700;
-  color: #333333;
-  font-size: 80px;
-  letter-spacing: -0.80px;
-  line-height: 96.0px;
-  white-space: nowrap;
+  line-height: 120%;
+  letter-spacing: -1%;
+  color: #333;
 }
 
-.macbook-pro .text-wrapper-15 {
-  width: 337px;
-  height: 32px;
-  margin-top: 30px;
-  font-family: "Pretendard-Regular", Helvetica;
+.contact p{
+  font-size: 1.25rem;
   font-weight: 400;
-  color: #333333;
-  font-size: 20px;
-  letter-spacing: -0.20px;
-  line-height: 32.0px;
-  white-space: nowrap;
+  line-height: 160%;
+  letter-spacing: -1%;
+  color: #333;
 }
 
-.macbook-pro .text-wrapper-16 {
-  width: 91px;
-  height: 32px;
-  margin-top: 20px;
-  font-family: "Pretendard-Regular", Helvetica;
+.contact button{
+  font-size: 1.25rem;
   font-weight: 400;
-  color: #007aff;
-  font-size: 20px;
-  letter-spacing: -0.20px;
-  line-height: 32.0px;
-  white-space: nowrap;
+  line-height: 160%;
+  letter-spacing: -1%;
+  color: #007AFF;
 }
+
+.contact .m-contact{
+  display: none;
+}
+
+@media screen and (max-width:375px) {
+  html{
+    font-size: 12px;
+  } 
+
+  .container{
+    width: 100%;
+  }
+
+  header{
+    width: 100%;
+    height: 56px;
+    padding: 16px 2rem;
+    background: none;
+    position: absolute;
+  }
+
+  header .container{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    
+  }
+
+  header h1, nav{
+    display: none;
+  }
+
+  .menu-btn{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('./images/bars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* main */
+
+  main{
+    background-image: url(./images/mobile\ main.png);
+    width: 100%;
+    height: 500px;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  main::before{
+    display: none;
+  }
+
+  main h1:nth-of-type(1){
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  main h1:nth-of-type(2){
+    font-size: 50px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  main .content{
+    display: none;
+  }
+
+  main .mobile{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 48px;
+    margin-top: 2.5rem;
+  }
+
+  main .mobile p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #fff;
+    letter-spacing: -2.5%;
+    border: 1px solid #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 100px;
+  }
+
+  .about .title{
+    display: none;
+  }
+
+  .about .about-self{
+    display: none;
+  }
+
+  .about .personal-history{
+    display: none;
+  }
+
+  /* mobile about me */
+  .about .mobile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about .m-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 8px;
+  }
+
+  .about .m-title h1{
+    font-size: 2rem;
+    letter-spacing: -2.5%;
+    line-height: 140%;
+    font-weight: 600;
+  }
+
+  .about .m-title p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -2.5%;
+    line-height: 160%;
+    color: #767676;
+  }
+
+  .about-card-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  margin-bottom: 32px;
+  }
+
+  .about-card {
+    width: 158px;
+    background: #F7F7FB;
+    padding: 16px;
+    border-radius: 12px;
+    text-align: left;
+  }
+
+  .about-card img {
+    width: 44px;
+    margin-bottom: 17px;
+  }
+
+  .about-card h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: #767676;
+  }
+
+  .about-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    line-height: 140%;
+  }
+
+  .about-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 100px;
+    border: 1px solid #eee;
+    background: none;
+    cursor: pointer;
+    align-self: center;
+    color: #767676;
+    margin-bottom: 55px;
+  }
+
+  /* portfolio */
+  .portfolio{
+    padding: 90px 0;
+  }
+
+  .portfolio .container{
+    width: 327px;
+  }
+
+  .portfolio .title{
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 24px;
+  }
+
+  .portfolio .title h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .portfolio .title .more{
+    font-size: 14px;
+    font-weight: 400;
+    color: #767676;
+    display: block;
+  }
+
+  .portfolio .portfolio-list{
+    display: none;
+  }
+
+  .portfolio .m-portfolio-scroll{
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .portfolio .m-portfolio-card{
+    background-image: linear-gradient(to bottom, 
+      rgba(0,0,0,0) 40%, 
+      rgba(0,0,0,0.25) 100%
+    ),
+    url('./images/portfolio.png');
+    width: 230px;
+    height: 287px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 20px 32px;
+  }
+
+  .portfolio .m-portfolio-card strong{
+    display: block;
+    margin-bottom: 4px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .portfolio .m-portfolio-card p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  /* contact */
+
+  
+
+  .contact .content{
+    display: none;
+  }
+
+  .contact .m-contact{
+    padding: 100px 0;
+    display: block;
+  }
+
+  .contact .m-contact h1{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+
+  .contact .m-contact .m-line{
+    width: 327px;
+    height: 1px;
+    background-color: #eee;
+    margin: 12px 0 24px 0;
+  }
+
+  .contact .m-contact .m-contact-item{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 24px;
+  }
+
+  .contact .m-contact-item p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .contact .container{
+    width: 375px;
+    margin: 0 24px;
+  }
+
+}
+
