@@ -29,7 +29,8 @@ body {
 /* 공통 --------------------- */
 
 .container{
-  width: 1080px;
+  max-width:1080px;
+  width:100%;
   margin: 0 auto;
 }
 
@@ -333,7 +334,7 @@ main .mobile{
   display: none;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:480px) {
   html{
     font-size: 12px;
   } 
@@ -632,4 +633,3 @@ main .mobile{
   }
 /* 수정 1 */
 }
-
